@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+#coulmn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+
+li {
+    display: flex;
+    background: #777777;
+    width: 100px;
+    height: 100px;
+    border-bottom: white 1px dotted;
+    border-right: white 1px dotted;
+    justify-content: center;
+    align-items: center;
+    font-size: "6em";
+}
