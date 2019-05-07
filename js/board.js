@@ -24,9 +24,8 @@
             
         turn = !turn
         arr[$(this).parents().index()][$(this).index()] = $(this).text();
-        console.log(arr)
         if(count >= 4)
-          setTimeout(check(), 100);
+          setTimeout(check, 100);
     })
 
     $("button").click(function(){
