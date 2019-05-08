@@ -1,8 +1,9 @@
 body {
     background: #355664;
     display: flex; 
-    justify-content: center;
+    justify-content: right;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 ul {
@@ -10,8 +11,6 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    position: relative;
-    left: 27%;
 }
 
 li {
@@ -26,11 +25,42 @@ li {
 
 button {
     position: absolute;
-    bottom: 40%;
+    bottom: 35%;
     left: 10%;
     background: #213e4a;
-    width: 10em;
-    height: 10em;
+    width: 150px;
+    height: 150px;
     color: #ffffff
 }
 
+#one {
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+    background: #213e4a;
+    color: #ffffff;
+    margin: 0;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px
+}
+
+
+#two {
+    position: absolute;
+    bottom: 45%;
+    left: 40%;
+    background: #213e4a;
+    color: #ffffff;
+    margin: 0;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px
+}
+
+div {
+    margin-right: 15px;
+    margin-top: 20px;
+}
