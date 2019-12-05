@@ -32,9 +32,9 @@
       $(this).off("click")
       $(this).off("mouseover")
       if(turn)
-          $(this).text("X"), audio = new Audio('../audio/Tick.mp3');
+          $(this).text("X"), audio = new Audio('js/../audio/Tick.mp3');
       else
-          $(this).text("O"), audio = new Audio('../audio/Woosh.mp3');
+          $(this).text("O"), audio = new Audio('js/../audio/Woosh.mp3');
       audio.play();
       turn = !turn
       arr[$(this).parents().index()][$(this).index()] = $(this).text();
@@ -71,14 +71,14 @@
  const restart = function(check=false){  
    count = -1;
    if(check){
-    audio = new Audio('../audio/applause.mp3');
+    audio = new Audio('js/../audio/applause.mp3');
     audio.play();
     if(!turn){
       setTimeout(function(){
         alert("X is Win")
       }, 100);
       localStorage.setItem("x", (parseInt(localStorage.getItem("x")) + 1))
-      audio = new Audio('../audio/applause.mp3');
+      audio = new Audio('js/../audio/applause.mp3');
     }
     else{
       setTimeout(function(){
